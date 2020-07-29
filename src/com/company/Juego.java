@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Juego {//clase
+public abstract class Juego {//clase
     private int vidas;//atributo
     private int vidasIniciales;
     private static int record=0;//común
@@ -41,7 +41,9 @@ public class Juego {//clase
         }
     }
 
-    //public static void main (String[]args){
-    //}
+    public abstract void Juega();
 
-}
+    }
+
+
+
