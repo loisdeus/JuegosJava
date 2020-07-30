@@ -41,7 +41,7 @@ public abstract class Juego {//clase
         }
     }
 
-    public abstract void Juega();
+
 
     }
 

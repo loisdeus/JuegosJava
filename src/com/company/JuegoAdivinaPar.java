@@ -15,4 +15,14 @@ public class JuegoAdivinaPar extends JuegoAdivinaNumero{
         }
        // return super.ValidaNumero(num);
     }
-}
+    public  void  MuestraNombre(){
+        System.out.println("Juego Adivina Numero solo Par");
+    }
+
+        public void MuestraInfo(){
+            System.out.println("Tienes que adivinar el número antes de quedarte sin vidas");
+            this.MuestraVidasRestantes();
+        }
+
+    }
+

@@ -15,4 +15,11 @@ public class JuegoAdivinaImpar extends JuegoAdivinaNumero{
         }
         //return super.ValidaNumero(num);
     }
+    public void MuestraNombre(){
+        System.out.println("Juego Adivina Número solo Impar");
+    }
+    public void MuestraInfo(){
+        System.out.println("Tienes que adivinar el número antes de quedarte sin vidas");
+        this.MuestraVidasRestantes();
+    }
 }
