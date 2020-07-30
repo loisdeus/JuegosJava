@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.Interface.Jugable;
+
 import java.util.Scanner;
 
 public class Aplicacion {

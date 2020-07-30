@@ -1,8 +1,11 @@
-package com.company;
+package com.company.numero;
+
+import com.company.Juego;
+import com.company.interfaces.Jugable;
 
 import java.util.Scanner;
 
-public  class JuegoAdivinaNumero extends Juego implements Jugable{
+public  class JuegoAdivinaNumero extends Juego implements Jugable {
     private int numeroAdivinar;
     public JuegoAdivinaNumero(int vidas, int numero){
         super(vidas);
