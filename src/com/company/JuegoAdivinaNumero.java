@@ -20,25 +20,30 @@ public  class JuegoAdivinaNumero extends Juego{
             System.out.println("Adivina el número entre 0 y 10");
             numero = leer.nextInt();
             leer.nextLine();
-            if (numero == numeroAdivinar) {
-                System.out.println("Acertaste!");
-                ActualizaRecord();
-                seguir=false;
-            } else {
-                if (QuitaVida()) {
-                    if (numero > numeroAdivinar) {
-                        System.out.println("El número es menor");
-
-                    } else {
-                        System.out.println("El número es mayor");
-                    }
-                    System.out.println("Inténtalo de nuevo");
+            if (ValidaNumero(numero)) {
+                if (numero == numeroAdivinar) {
+                    System.out.println("Acertaste!");
+                    ActualizaRecord();
+                    seguir = false;
                 } else {
+                    if (QuitaVida()) {
+                        if (numero > numeroAdivinar) {
+                            System.out.println("El número es menor");
 
-                    seguir=false;
+                        } else {
+                            System.out.println("El número es mayor");
+                        }
+                        System.out.println("Inténtalo de nuevo");
+                    } else {
+
+                        seguir = false;
+                    }
                 }
             }
-
         }while (seguir);
+    }
+
+    public boolean ValidaNumero(int num){
+        return true;
     }
 }
